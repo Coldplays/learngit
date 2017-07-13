@@ -1,0 +1,334 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ 	<meta charset="UTF-8">
+ 	<title>仿花瓣网制作</title>
+ 	<link rel="stylesheet" href="css/demo.css">
+ 	<script src="js/jquery.min.js"></script>
+ 	<script src="js/demo.js"></script>
+ 	<!-- 使IE支持HTML5新元素 -->
+ 	<!--[if lt IE]> 
+		<script> 
+		   (function() {
+			     if (! 
+			     /*@cc_on!@*/
+			     0) return;
+			     var e = "abbr, article, aside, audio, canvas, datalist, details, dialog, eventsource, figure, footer, header, hgroup, mark, menu, meter, nav, output, progress, section, time, video".split(', ');
+			     var i= e.length;
+			     while (i--){
+			         document.createElement(e[i])
+			     } 
+			})() 
+		</script>
+	<![endif]-->
+ </head>
+ <body>
+ 	<!-- 头部代码 -->
+ 	<header>
+ 		<!-- 导航部分 -->
+ 		<nav class="contWidth">
+ 			<a href="#" class="logo lt"></a>
+ 			<ul class="left-part lt">
+ 				<li class="active"><a href="#">发现</a></li>
+ 				<li><a href="#">最新</a></li>
+ 				<li><a href="#">美思<i class="new"></i></a></li>
+ 				<li><a href="#">教育</a></li>
+ 			</ul>
+ 			<form action="#" class="lt">
+				<p>
+					<input type="text" placeholder="搜索你喜欢的">
+					<a href="#" class="go"></a>
+				</p>
+			</form>
+ 			<ul class="login-part rt">
+ 				<li><a href="#" class="reg">注册</a></li>
+ 				<li><a href="#" class="login">登录</a></li>
+ 			</ul>
+ 		</nav>
+ 		<!-- 遮罩层 -->
+ 		<div class="mask"></div>
+
+ 		<!-- 搜索版块 -->
+		<div class="search contWidth">
+			<h1>花瓣，陪你做生活的设计师</h1>
+			<form action="#">
+				<p>
+					<input type="text" placeholder="搜索你喜欢的">
+					<a href="#" class="go"></a>
+				</p>
+			</form>
+			<div class="hot-search">
+				<span class="lt">热门搜索:</span>
+				<ul>
+					<li><a href="#">壁纸那些事</a></li>
+					<li><a href="#">少即是多</a></li>
+					<li><a href="#">早餐你爱吃什么</a></li>
+					<li><a href="#">多肉植物</a></li>
+				</ul>
+			</div>
+		</div>
+ 	</header>
+
+ 	<!-- 主体部分 -->
+ 	<div class="content contWidth">
+ 		<div class="recommend-line">
+ 			<a>大家正在关注</a>
+ 		</div>
+		<div class="attention-box contWidth">
+			<a href="#">
+				<img src="imgs/att1.jpg" alt="">
+				<span>吊椅</span>
+				<span class="mask"></span>
+			</a>
+			<a href="#">
+				<img src="imgs/att2.jpg" alt="">
+				<span>桃花</span>
+				<span class="mask"></span>
+			</a>
+			<a href="#">
+				<img src="imgs/att3.jpg" alt="">
+				<span>盘扣</span>
+				<span class="mask"></span>
+			</a>
+			<a href="#">
+				<img src="imgs/att4.jpg" alt="">
+				<span>多肉壁纸</span>
+				<span class="mask"></span>
+			</a>
+			<a href="#">
+				<img src="imgs/att5.jpg" alt="">
+				<span>中式早餐</span>
+				<span class="mask"></span>
+			</a>
+			<a href="#">
+				<img src="imgs/att6.jpg" alt="">
+				<span>夜景手机壁纸</span>
+				<span class="mask"></span>
+			</a>
+			<a href="#">
+				<img src="imgs/att7.jpg" alt="">
+				<span>逆光摄影</span>
+				<span class="mask"></span>
+			</a>
+		</div>
+ 		<div class="recommend-line">
+ 			<a>为您推荐</a>
+ 		</div>
+
+ 		<!-- 图片部分 -->
+ 		<div class="content-img contWidth lt">
+ 			<div class="img-row contWidth">
+ 				<div class="imgbox lt">
+ 					<a href="#" class="imgwrap"><img src="imgs/img1.jpg" alt=""></a>
+ 				</div>
+ 				<div class="imgbox lt">
+ 					<div class="imgbox-item">
+ 						<div class="item-l lt">
+ 							<h1>画板</h1>
+ 							<p class="line lt"></p>
+	 						<a href="#" class="title">【Munayoyoo.|理想一种】</a>
+	 						<p><span>323采集</span><span>607粉丝</span></p>
+	 						<p>来自<a href="#" class="author">potatoooo</a></p>
+ 						</div>
+ 						<div class="info-tra-lt"></div>
+ 					</div>
+ 					<div class="imgbox-item">
+ 						<div class="item-r gt">
+ 							<h1>画板</h1>
+ 							<p class="line rt"></p>
+	 						<a href="#" class="title">一枝独秀</a>
+	 						<p><span>200采集</span><span>1286粉丝</span></p>
+	 						<p>来自<a href="#" class="author">田野君i</a></p>
+ 						</div>
+ 						<div class="info-tra-rt"></div>
+ 					</div>
+ 				</div>
+ 				<div class="imgbox lt">
+ 					<a href="#" class="imgwrap"><img src="imgs/img3.jpg" alt=""></a>
+ 				</div>
+ 				<div class="imgbox lt">
+ 					<a href="#" class="imgwrap"><img src="imgs/img2.jpg" alt=""></a>
+ 					<div class="author-intro">
+ 						<div class="title lt">画板</div>
+ 						<div class="list rt">
+ 							<h3><a href="#">Susiu | 古韵</a></h3>
+ 							<p><span>403采集</span><span>1229粉丝</span></p>
+ 						</div>
+ 					</div>
+ 				</div>
+ 			</div>
+
+ 			<div class="img-row contWidth">
+ 				<div class="imgbox lt">
+ 					<a href="#" class="imgwrap"><img src="imgs/img4.jpg" alt=""></a>
+ 					<div class="author-intro">
+ 						<div class="title lt">画板</div>
+ 						<div class="list rt">
+ 							<h3><a href="#">吃货动起来</a></h3>
+ 							<p><span>21采集</span><span>335粉丝</span></p>
+ 						</div>
+ 					</div>
+ 				</div>
+ 				<div class="imgbox lt">
+ 					<a href="#" class="imgwrap"><img src="imgs/img5.jpg" alt=""></a>
+ 				</div>
+ 				<div class="imgbox lt">
+ 					<div class="imgbox-item">
+ 						<div class="item-l lt">
+ 							<h1>画板</h1>
+ 							<p class="line lt"></p>
+	 						<a href="#" class="title">旅行攻略小系列~</a>
+	 						<p><span>22采集</span><span>632粉丝</span></p>
+	 						<p>来自<a href="#" class="author">~swenty~</a></p>
+ 						</div>
+ 						<div class="info-tra-lt"></div>
+ 					</div>
+ 					<div class="imgbox-item">
+ 						<div class="item-r gt">
+ 							<h1>画板</h1>
+ 							<p class="line rt"></p>
+	 						<a href="#" class="title">我是空空</a>
+	 						<p><span>29采集</span><span>363粉丝</span></p>
+	 						<p>来自<a href="#" class="author">LOVE小空</a></p>
+ 						</div>
+ 						<div class="info-tra-rt"></div>
+ 					</div>
+ 				</div>
+ 				<div class="imgbox lt">
+ 					<a href="#" class="imgwrap"><img src="imgs/img6.png" alt=""></a>
+ 				</div>
+ 			</div>
+
+ 			<div class="img-row contWidth">
+ 				<div class="imgbox lt">
+ 					<a href="#" class="imgwrap"><img src="imgs/img7.png" alt=""></a>
+ 				</div>
+ 				<div class="imgbox lt">
+ 					<div class="imgbox-item">
+ 						<div class="item-l lt">
+ 							<h1>画板</h1>
+ 							<p class="line lt"></p>
+	 						<a href="#" class="title">一场美味的白日梦</a>
+	 						<p><span>102采集</span><span>3096粉丝</span></p>
+	 						<p>来自<a href="#" class="author">洪小漩</a></p>
+ 						</div>
+ 						<div class="info-tra-lt"></div>
+ 					</div>
+ 					<div class="imgbox-item">
+ 						<div class="item-r gt">
+ 							<h1>画板</h1>
+ 							<p class="line rt"></p>
+	 						<a href="#" class="title">(๑´ㅂ`๑) 蔬果摆拍哪家强</a>
+	 						<p><span>200采集</span><span>1286粉丝</span></p>
+	 						<p>来自<a href="#" class="author">糊你熊脸哟</a></p>
+ 						</div>
+ 						<div class="info-tra-rt"></div>
+ 					</div>
+ 				</div>
+ 				<div class="imgbox lt">
+ 					<a href="#" class="imgwrap"><img src="imgs/img8.jpg" alt=""></a>
+ 				</div>
+ 				<div class="imgbox lt">
+ 					<a href="#" class="imgwrap"><img src="imgs/img9.png" alt=""></a>
+ 					<div class="author-intro">
+ 						<div class="title lt">画板</div>
+ 						<div class="list rt">
+ 							<h3><a href="#">《99次男》</a></h3>
+ 							<p><span>43采集</span><span>18粉丝</span></p>
+ 						</div>
+ 					</div>
+ 				</div>
+ 			</div>
+
+ 			<div class="img-row contWidth">
+	 			<div class="imgbox lt">
+	 					<a href="#" class="imgwrap"><img src="imgs/img10.jpg" alt=""></a>
+	 					<div class="author-intro">
+	 						<div class="title lt">画板</div>
+	 						<div class="list rt">
+	 							<h3><a href="#">Susiu | 古韵</a></h3>
+	 							<p><span>403采集</span><span>1229粉丝</span></p>
+	 						</div>
+	 					</div>
+	 				</div>
+ 				<div class="imgbox lt">
+ 					<a href="#" class="imgwrap"><img src="imgs/img11.jpg" alt=""></a>
+ 				</div>
+ 				<div class="imgbox lt">
+ 					<div class="imgbox-item">
+ 						<div class="item-l lt">
+ 							<h1>画板</h1>
+ 							<p class="line lt"></p>
+	 						<a href="#" class="title">汤包馒头❀总有你喜欢</a>
+	 						<p><span>323采集</span><span>607粉丝</span></p>
+	 						<p>来自<a href="#" class="author">渐京</a></p>
+ 						</div>
+ 						<div class="info-tra-lt"></div>
+ 					</div>
+ 					<div class="imgbox-item">
+ 						<div class="item-r gt">
+ 							<h1>画板</h1>
+ 							<p class="line rt"></p>
+	 						<a href="#" class="title">不及你一人暖”</a>
+	 						<p><span>200采集</span><span>1286粉丝</span></p>
+	 						<p>来自<a href="#" class="author">田野君i</a></p>
+ 						</div>
+ 						<div class="info-tra-rt"></div>
+ 					</div>
+ 				</div>
+ 				<div class="imgbox lt">
+ 					<a href="#" class="imgwrap people"><img src="imgs/img12.png" alt=""></a>
+ 				</div>
+ 			</div>
+ 		</div>
+
+ 		<div class="more-line">
+ 			<a href="#">加载更多</a>
+ 		</div>
+ 	</div>
+
+ 	<!-- footer部分 -->
+ 	<footer>
+ 		<div class="wrap contWidth">
+ 			<div class="column lt">
+	 			<a class="title">花瓣首页</a>
+	 			<a href="#">花瓣采集工具</a>
+	 			<a href="#">花瓣官方博客</a>
+	 		</div>
+	 		<div class="column lt">
+	 			<a class="title">联系与合作</a>
+	 			<a href="#">联系我们</a>
+	 			<a href="#">用户反馈</a>
+	 			<a href="#">花瓣 LOGO 标准文档</a>
+	 		</div>
+	 		<div class="column lt">
+	 			<a class="title">移动客户端</a>
+	 			<a href="#">花瓣 iPhone 版</a>
+	 			<a href="#">花瓣 Android 版</a>
+	 			<a href="#">花瓣 HD</a>
+	 		</div>
+	 		<div class="column rt follow-us">
+	 			<a class="title">关注我们</a>
+	 			<a href="#">新浪微博：@花瓣网</a>
+	 			<a>官方 QQ：188126952</a>
+	 			<a>
+	 				官方微信：<img src="imgs/about_footer_code.png" alt="">
+	 				<img src="imgs/weixin_huaban.png" alt="" class="weixin_huaban">
+	 			</a>
+	 		</div>
+ 		</div>
+ 	</footer>
+
+ 	<!-- 回到顶部和添加布局 -->
+ 	<div class="elevator-item">
+ 		<a class="back-to-top" title="回到顶部"></a>
+ 		<a class="plus"></a>
+ 		<div class="group">
+ 			<a href="#">添加采集<i class="upload"></i></a>
+ 			<a href="#">添加画板<i class="add-bord"></i></a>
+ 			<a href="#">安装采集工具<i class="goodies"></i></a>
+ 			<div class="arr"></div>
+ 		</div>
+ 	</div>
+ </body>
+ </html>
